@@ -177,7 +177,7 @@ body {
 }
 
 /* ===============================
-   SOCIAL ICONS (Bottom Right in One Row)
+   SOCIAL ICONS 
 ================================= */
 .social-icons {
   position: absolute;
@@ -193,7 +193,6 @@ body {
   justify-content: center;
   z-index: 100;
 
-  /* Transparent glassy background */
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(8px);
   
@@ -202,16 +201,13 @@ body {
   transition: background 0.3s ease, transform 0.3s ease;
 }
 
-
-
-
 .social-icons a {
   color: var(--clr-text-light);
   font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none; /* ✅ removes underline */
+  text-decoration: none; 
   transition: color 0.3s, transform 0.3s;
 }
 
@@ -223,9 +219,6 @@ body {
 .social-icons:hover {
   background: rgba(255, 255, 255, 0.15);
 }
-
-
-
 
 /* ===== STORY SECTION ===== */
 .story-section {
@@ -261,7 +254,7 @@ body {
   margin: 0 auto;
 }
 
-/* === STORY CONTENT (Desktop: image + text side by side) === */
+/* === STORY CONTENT === */
 .story-content {
   display: flex;
   justify-content: space-between;
@@ -320,10 +313,6 @@ body {
   transform: scale(1.02);
   box-shadow: 0 0 2rem rgba(217, 124, 43, 0.5);
 }
-
-
-
-
 
 /* ===============================
   the Menu
@@ -458,11 +447,6 @@ body {
       text-align: start;
     }
 
-
-
-
-    
-
   .coffino-events {
   text-align: center;
   background-color: var(--clr-bg-dark);
@@ -586,7 +570,7 @@ body {
   background-color: #ffa94d;
 }
 
-/* ---------- Statistics Section ---------- */
+/* ==== Statistics Section ==== */
 .statistics-section {
       text-align: center;
       padding: 20px 20px;
@@ -611,7 +595,7 @@ body {
     /* === STATS GRID === */
     .stats-container {
        display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Always 4 columns */
+  grid-template-columns: repeat(4, 1fr); 
   gap: 30px;
   max-width: 1200px;
   margin: 0 auto;
@@ -652,7 +636,7 @@ body {
     }
 
 
-/* slidshow*/
+/* ==== slidshow ==== */
 .slideshow-gallery{
 
 height: 750px;
@@ -663,8 +647,6 @@ background-color: #090A08;
 padding: 0;
 
 }
-
-
 
 .slideshow-gallery h2{
     text-align: center;
@@ -692,12 +674,10 @@ padding: 0;
     display: block;
 }
 
-/* Hide the images by default */
 .mySlides {
   display: none;
 }
 
-/* Add a pointer when hovering over the thumbnail images */
 .cursor {
   cursor: pointer;
 }
@@ -719,7 +699,7 @@ padding: 0;
   -webkit-user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
@@ -733,7 +713,6 @@ padding: 0;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* Number text (1/3 etc) */
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -742,7 +721,6 @@ padding: 0;
   top: 0;
 }
 
-/* Container for image text */
 .caption-container p{
   text-align: center;
   background-color: #000;
@@ -756,13 +734,11 @@ padding: 0;
   clear: both;
 }
 
-/* Six columns side by side */
 .column {
   float: left;
   width: 16.66%;
 }
 
-/* Add a transparency effect for thumnbail images */
 .demo {
   opacity: 0.6;
 }
@@ -772,11 +748,7 @@ padding: 0;
   opacity: 1;
 }
 
-
-
-
-
-/*footer*/
+/* ==== footer ==== */
   footer {
     position: relative;
     display: flex;
@@ -791,7 +763,6 @@ padding: 0;
     gap: 40px;
   }
 
-  /* Left Columns */
   .footer-info {
     display: flex;
     flex-direction: column;
@@ -810,7 +781,6 @@ padding: 0;
     line-height: 1.6;
   }
 
-  /* Open Hours */
   .footer-hours {
     flex: 1 1 200px;
   }
@@ -821,7 +791,6 @@ padding: 0;
     line-height: 1.6;
   }
 
-  /* Contact */
   .footer-contact {
     flex: 1 1 250px;
   }
@@ -831,10 +800,6 @@ padding: 0;
     color: #ccc;
     line-height: 1.8;
   }
-
-
-
-
 
 .footer-social-icons{
   display: flex;
@@ -859,8 +824,6 @@ padding: 0;
 }
 
 
-  /* Contact Form */
-  
   .footer-form {
     flex: 1 1 300px;
   }
@@ -938,23 +901,33 @@ padding: 0;
     }
 
 
-/* === RESPONSIVE DESIGN === */
+/* ===============================
+   RESPONSIVE DESIGN
+================================= */
+
 @media (max-width: 1024px) {
   .story-section {
-    padding: 5rem 8%; /* 80px → 5rem */
+    padding: 2rem 8%; 
   }
 
   .story-content {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);          
+    max-width: none;      
     flex-direction: column;
-    text-align: left;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 3rem 1rem 3rem;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    box-sizing: border-box; 
   }
 
   .story-text,
   .story-image {
     max-width: 100%;
   }
-
-  /* ✅ Make image appear first on small screens */
   .story-image {
     order: -1;
   }
@@ -968,14 +941,12 @@ padding: 0;
   }
 }
 
-/* ===============================
-   RESPONSIVE DESIGN
-================================= */
-
-
-
-
 @media (max-width: 900px) {
+  .story-content {
+    padding: 3rem 1rem 3rem;
+    align-items: center;
+    text-align: center;
+  }
   .event-cards {
     flex-direction: column;
     align-items: center;
@@ -1021,9 +992,6 @@ padding: 0;
 }
 
 
-
-
-
 @media (max-width: 768px) {
   .nav-links {
     position: fixed;
@@ -1062,7 +1030,6 @@ padding: 0;
     font-size: 1rem;
   }
 
-  /* Adjust social icons for small screens */
   .social-icons {
     bottom: 1rem;
     right: 1rem;
@@ -1072,12 +1039,11 @@ padding: 0;
 
 
   .menu-container {
-        grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
 
-        
-      }
+  }
 
-/* Stack content vertically */
+
 .story-content {
   width: 100vw;
   margin-left: calc(50% - 50vw);          
@@ -1088,12 +1054,10 @@ padding: 0;
   gap: 2rem;
   padding: 3rem 1rem 3rem;
   background-repeat: no-repeat;
-  background-size: cover; /* optional if using background image */
-  box-sizing: border-box; /* ensures padding doesn’t add overflow */
+  background-size: cover; 
+  box-sizing: border-box; 
 }
 
-
-  /* explicit mobile order (image first) */
   .story-image { order: 1; max-width: 100%; width: 100%; }
   .story-text  { order: 2; max-width: 100%; width: 100%; padding-left: 0; }
 

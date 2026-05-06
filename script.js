@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
           el.style.opacity = 1;
           el.style.transform = "translateY(0)";
-        }, index * 10); // minimal stagger for instant feel
+        }, index * 10); 
       }
     });
   }
