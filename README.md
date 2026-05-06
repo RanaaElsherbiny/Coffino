@@ -20,7 +20,7 @@ View the full website here:
 
 ## 🎨 Figma Design  
 View the original Figma UI design:  
-👉 [**Coffino Figma Design**](https://www.figma.com/proto/cQCWdccxr7wMQiPc9BXYRz/Coffino?node-id=0-1&t=7YvRjHfBtvj58sRq-1)
+👉 [**Coffino Figma Design**](https://www.figma.com/design/cQCWdccxr7wMQiPc9BXYRz/Coffino?node-id=1-2&t=7YvRjHfBtvj58sRq-1)
 
 <br>
 
